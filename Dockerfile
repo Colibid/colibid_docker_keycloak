@@ -1,3 +1,2 @@
 FROM quay.io/keycloak/keycloak-x
-COPY . /srv
-CMD 'start'
+ENTRYPOINT ["/opt/keycloak/bin/kc.sh start"]
